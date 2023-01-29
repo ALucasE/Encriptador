@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Desafio Oracle</title>
+</head>
+<body>
+    <main class="contenedor">
+        <div class="logo">
+            <img class="logo-img" src="img/Logo.png" alt="Logo de Alura">
+            <h1 class="titulo">Codificador de mensajes</h1>
+        </div>
+
+        <div class="panel-izq">
+            <input type="text" class="input-mensaje" placeholder="Ingrese el texto aqui" id="entrada">
+        </div>
+
+        <div class="panel-der">            
+            <img src="img/imagen01.png" alt="Muñeco con una lupa buscando" class="imgDer" id="imgDer">
+            <h2 class="texto" id="texto">Ningun mensaje fue encontrado</h2>
+            <textarea name="" id="resultado" cols="50" rows="10" class="resultado">Ingrese el texto que desee encriptar o desencriptar</textarea>
+            <button id="copiar" class="copiar" onclick="copiar()">Copiar</button>
+        </div>
+
+        <div class="panel-botones">
+            <p>*Solo letras minusculas y sin acentos</p>
+            <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </main>    
+</body>
+</html>
